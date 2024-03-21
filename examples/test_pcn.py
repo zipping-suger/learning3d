@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR[-8:] == 'examples':
 	sys.path.append(os.path.join(BASE_DIR, os.pardir))
 	os.chdir(os.path.join(BASE_DIR, os.pardir))
-	
+
 from learning3d.models import PCN
 from learning3d.data_utils import ModelNet40Data, ClassificationData
 from learning3d.losses import ChamferDistanceLoss
